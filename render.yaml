@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: api-pilares-fmp
-    env: python
-    buildCommand: ""
-    startCommand: python api_pilares_fmp.py
-    plan: free
