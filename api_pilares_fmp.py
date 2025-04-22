@@ -1,9 +1,11 @@
 
 from flask import Flask, jsonify
 import requests
+from flask_cors import CORS
 import os
 
 app = Flask(__name__)
+CORS(app)
 API_KEY = "cce595effe8b28f6a4cd6f2b490d441a"
 
 def get_profile(ticker):
