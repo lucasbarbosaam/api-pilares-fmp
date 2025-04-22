@@ -6,7 +6,7 @@ app = Flask(__name__)
 API_KEY = "cce595effe8b28f6a4cd6f2b490d441a"
 
 def buscar_dados_fmp(ticker):
-    url = f"https://financialmodelingprep.com/api/v3/profile/{ticker}.SA?apikey={API_KEY}"
+    url = f"https://financialmodelingprep.com/api/v3/profile/{ticker.upper()}?apikey={API_KEY}"
     response = requests.get(url)
     if response.status_code != 200:
         return None
